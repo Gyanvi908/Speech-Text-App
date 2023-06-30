@@ -1,0 +1,111 @@
+@import url(
+  https://fonts.googleapis.com/css?family=Poppins:100,
+  100italic,
+  200,
+  200italic,
+  300,
+  300italic,
+  regular,
+  italic,
+  500,
+  500italic,
+  600,
+  600italic,
+  700,
+  700italic,
+  800,
+  800italic,
+  900,
+  900italic
+);
+
+:root {
+  --primary-color: #356aff;
+  --bg-color: #fff;
+  --text-color: #000;
+  --light-text-color: #a5a5a5;
+  --body-bg-color: #f5f5f5;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url("./s2t.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.container {
+  width: 800px;
+  padding: 20px;
+  border-radius: 1px;
+  background-color: rgba(225, 225, 20, 0.933);
+}
+.container .heading {
+  font-size: 25px;
+  font-weight: 500;
+  margin-bottom: 10px;
+  text-align: center;
+  font-weight: bold;
+}
+.result {
+  background-color: white;
+}
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+  height: 60px;
+  padding: 20px;
+  width: 100%;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  font-size: 20px;
+  font-weight: 500;
+  cursor: pointer;
+  color: #fff;
+  background-color: var(--primary-color);
+}
+.btn ion-icon {
+  font-size: 30px;
+}
+.container .record img {
+  width: 30px;
+  height: 30px;
+  display: none;
+}
+.container .record.recording img {
+  display: block;
+}
+.container .record.recording ion-icon {
+  display: none;
+}
+.container .result {
+  width: 100%;
+  min-height: 200px;
+  padding: 10px;
+  border: 1px solid var(--light-text-color);
+  border-radius: 5px;
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 20px;
+  color: var(--text-color);
+}
+.container .result p {
+  display: inline;
+  margin-left: 3px;
+  color: var(--light-text-color);
+}
+.buttons {
+  display: flex;
+  gap: 20px;
+}
